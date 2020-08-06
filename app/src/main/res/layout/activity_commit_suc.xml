@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/bg_cv_edit"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/iv_commit"  android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_commit_suc" />
+        <TextView
+            android:id="@+id/tv_commit_suc"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_commit"
+            android:layout_marginTop="5dp"
+            android:text="提交成功"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tv_commit_suc"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/tv_rk"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:text="再次入库"
+                android:background="@drawable/bg_blue"
+                android:layout_width="80dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/tv_home"
+                android:textColor="@color/color_GrayShallow"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:text="返回首页"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_cv_edit"
+                android:layout_width="80dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorGray"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <include layout="@layout/titlebar" />
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/icon_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/et_cph"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bg_login_edit"
+            android:hint="车牌号"
+            android:paddingLeft="10dp"
+            android:textColor="@color/color_GrayShallow" />
+
+        <EditText
+            android:id="@+id/et_sj"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/et_cph"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_login_edit"
+            android:hint="司机"
+            android:paddingLeft="10dp"
+            android:textColor="@color/color_GrayShallow" />
+
+        <TextView
+            android:id="@+id/txt_sj"
+            android:gravity="center"
+            android:layout_below="@+id/et_sj"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="发车时间"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+        <LinearLayout
+            android:id="@+id/layout_o"
+            android:background="@drawable/bg_login_edit"
+            android:layout_below="@+id/txt_sj"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+
+                android:id="@+id/et_start_time"
+                android:hint="开始时间"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:background="@color/colorGray"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/et_end_time"
+                android:hint="结束时间"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/layout_o"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bg_blue"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="搜索"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

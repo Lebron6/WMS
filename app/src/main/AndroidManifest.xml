@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ocean.wms">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:name="com.ocean.wms.app.WMSAPP"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme">
+        <activity android:name=".ui.activity.UserLoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.MainActivity"/>
+        <activity android:name="io.github.xudaojie.qrcodelib.CaptureActivity"/>
+        <activity android:name=".ui.activity.CommitSucActivity"/>
+        <activity android:name=".ui.activity.MoveLibraryActivity"/>
+        <activity android:name=".ui.activity.ReplenishmentActivity"/>
+        <activity android:name=".ui.activity.WarehousingActivity"/>
+        <activity android:name=".ui.activity.ReplenishmentListActivity"/>
+        <activity android:name=".ui.activity.OutGoodsListActivity"/>
+        <activity android:name=".ui.activity.OutGoodsActivity"/>
+        <activity android:name=".ui.activity.GoodsDetailsActivity" />
+        <activity android:name=".ui.activity.SearchResultActivity" />
+        <activity android:name=".ui.activity.StorageAreaActivity" />
+        <activity android:name=".ui.activity.InventorySummaryActivity" />
+        <activity android:name=".ui.activity.InventorySummaryListActivity" />
+        <activity android:name=".ui.activity.CarInfoActivity" />
+        <activity android:name=".ui.activity.CarDetilsActivity" />
+        <activity android:name=".ui.activity.VehicleTransportActivity" />
+        <activity android:name=".ui.activity.CustomerLocationActivity" />
+        <activity android:name=".ui.activity.CarMotionActivity" />
+
+    </application>
+
+</manifest>

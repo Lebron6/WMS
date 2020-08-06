@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorGray"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/titlebar" />
+    </RelativeLayout>
+<LinearLayout
+
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_below="@+id/layout_title"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center_vertical"
+    android:id="@+id/layout_car_num"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_login_edit"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车牌号："
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        /><TextView
+    android:id="@+id/tv_car_num"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="苏E-1387"
+    android:textColor="#ff000000"
+    android:textSize="14sp"
+    />
+</LinearLayout>
+    <LinearLayout android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发车时间："
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            /><TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015.3.9"
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发车目的地："
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            /><TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="江苏南京"
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行程时间："
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_al_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20小时"
+            android:textColor="#ff000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:text="车辆返回"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</RelativeLayout>

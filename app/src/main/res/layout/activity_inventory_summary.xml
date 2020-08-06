@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/et_hwbh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bg_login_edit"
+            android:hint="货物编号"
+            android:paddingLeft="10dp"
+            android:textColor="@color/color_GrayShallow" />
+
+        <EditText
+            android:id="@+id/et_goods"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/et_hwbh"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_login_edit"
+            android:hint="货物"
+            android:paddingLeft="10dp"
+            android:textColor="@color/color_GrayShallow" />
+
+        <EditText
+            android:id="@+id/et_hz"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/et_goods"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_login_edit"
+            android:hint="货主"
+            android:paddingLeft="10dp"
+            android:textColor="@color/color_GrayShallow" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/et_hz"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bg_blue"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="搜索"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

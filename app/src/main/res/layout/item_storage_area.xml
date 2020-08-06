@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_title_texts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="0.5dp"
+            android:background="@color/color_GrayShallow"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_hwbm"
+            android:text="货物编码"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayO"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="0.5dp"
+            android:background="@color/color_GrayShallow"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_cwbm"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="储位编码"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayO"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="0.5dp"
+            android:background="@color/color_GrayShallow"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_pc"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:lines="2"
+            android:text="批次"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayO"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="0.5dp"
+            android:background="@color/color_GrayShallow"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_sl"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:lines="2"
+            android:text="数量"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayO"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="0.5dp"
+            android:background="@color/color_GrayShallow"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View
+        android:background="@color/color_GrayShallow"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

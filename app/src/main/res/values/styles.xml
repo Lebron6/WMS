@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置状态栏颜色-->
+        <item name="android:statusBarColor">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--ToolBar上的Title颜色-->
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="android:navigationIcon">?attr/homeAsUpIndicator</item>
+    </style>
+    <style name="AppBaseTheme" parent="BaseTheme">
+    </style>
+
+
+    <style name="MyDatePickerDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+        <item name="android:colorAccent">@color/colorblack</item>
+    </style>
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:headerBackground">@color/colorblack</item>
+    </style>
+</resources>

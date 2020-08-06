@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/titlebar" />
+    </RelativeLayout>
+
+    <LinearLayout
+android:id="@+id/layout_67"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/layout_car_num"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_login_edit"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车牌号："
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_car_num"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_GrayShallow" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_location"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_login_edit"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/txt_khmd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户目的地"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/icon_drop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/iv_drop"
+                android:layout_toRightOf="@+id/txt_khmd"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_location"
+        android:layout_above="@+id/tv_seng_car"
+        android:layout_below="@+id/layout_67"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"></android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tv_seng_car"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlue"
+        android:gravity="center"
+        android:text="发车"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp" />
+</RelativeLayout>

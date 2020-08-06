@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+    android:background="@color/colorGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/titlebar"/>
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_blue"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="72dp"
+        android:layout_height="72dp">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PDA"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<EditText
+    android:id="@+id/et_account"
+    android:paddingLeft="10dp"
+    android:hint="请输入账号"
+    android:textColor="@color/color_GrayShallow"
+    android:background="@drawable/bg_login_edit"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/et_pwd"
+            android:textColor="@color/color_GrayShallow"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/et_account"
+            android:paddingLeft="10dp"
+            android:hint="请输入密码"
+            android:background="@drawable/bg_login_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/et_pwd"
+            android:paddingLeft="10dp"
+            android:hint="登录"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/bg_login_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_log"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/et_pwd"
+        android:paddingLeft="10dp"
+        android:hint=""
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/bg_login_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
